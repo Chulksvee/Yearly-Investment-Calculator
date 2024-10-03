@@ -1,0 +1,266 @@
+body{
+    background-image: url(./image/flat-lay-office-desk-assortment-with-copy-space.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    /* background-size: 100vw 100vh; */
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+/* The alert box container */
+.alert-box {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 999; /* High z-index to appear on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+/* The content of the alert */
+.alert-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Styling the message and button */
+.alert-content p {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.alert-content button {
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.alert-content button:hover {
+    background-color: darkorange;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+
+
+
+
+.container{
+    background-color: rgba(255, 255, 255, 0.722);
+    padding: 10px 5px;
+    width: 50%!important;
+    border-radius: 10px;
+    box-shadow: -2px 3px 4px 2px black;
+   
+    
+}
+
+.interest{
+    background-color: rgba(0, 0, 0, 0.336);
+    color: black;
+    text-align: center;
+    padding: 10px 9px;
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 30px;
+    width: 60%;
+    margin-top: 20px;
+    /* margin-left: 150px; */
+    letter-spacing: 1px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    border-radius: 10px;
+   
+}
+
+.link-underline{
+    background-color: orange;
+    padding: 5PX 12PX;
+    color: black;
+    border-radius: 4PX;
+    font-weight: bold;
+   
+    margin-bottom: 10px;
+}
+
+.link-underline:hover{
+    border: 2px solid red;
+    background-color: white;
+    color: red;
+}
+
+.CALCULATE{
+    margin-top: 5PX;
+    text-align: center;
+    
+}
+
+.words{
+    background-color: rgba(0, 0, 0, 0.418);
+    width: 60%;
+    color: black;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bolder;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px 0px;
+}
+
+.label{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: black;
+  
+}
+
+.label, input{
+    border-radius: 5px;
+    padding: 8px 5px;
+}
+
+input:hover{
+    border: 3px solid black;
+   
+}
+
+/* here is the mobile responsiness */
+/* 
+    @media screen and (max-width: 900px) {
+    .interest{
+    margin: auto;
+    font-size: 15px;
+    }
+
+    .words{
+        color: black;
+        font-weight: bold;
+    }
+
+    .container{
+    background-color: rgba(0, 128, 255, 0.768);
+    padding: 10px 5px;
+    width: 95%;
+    border-radius: 10px;
+    box-shadow: -2px 3px 4px 2px;
+    
+}
+
+.list ul li{
+    font-size: 16px;
+    display: flex;
+    
+}
+
+.word h3{
+font-size: 20px;
+}
+
+.word p{
+font-size: 19px;
+}
+
+
+} */
+
+/* For small screens (tablets and mobile phones) */
+@media screen and (max-width: 768px) {
+
+    body{
+        height: 100vh;
+    }
+
+    .interest{
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    .words{
+        font-size: 20px;
+        width: 90%;
+        padding: 8px 0px;
+    }
+
+    .container{
+        width: 90%!important;
+        padding: 8px;
+    }
+
+    .label, input{
+        width: 100%;
+        font-size: 18px;
+    }
+}
+
+/* For very small devices (phones) */
+@media screen and (max-width: 480px) {
+
+    body{
+        height: 100vh;
+    }
+
+    .interest{
+        font-size: 16px;
+        padding: 6px;
+    }
+
+    .words{
+        font-size: 16px;
+        padding: 5px 0px;
+        width: 100%;
+    }
+
+    .container{
+        width: 100%!important;
+        padding: 5px;
+    }
+
+    .label, input{
+        font-size: 16px;
+        padding: 5px;
+    }
+    
+    .link-underline {
+        padding: 4px 8px;
+    }
+    
+    .link-underline:hover {
+        border: 1px solid red;
+        padding: 4px 8px;
+    }
+
+    .CALCULATE {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}
